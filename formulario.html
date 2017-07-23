@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>A Simple Form</title>
+</head>
+<body>
+	<form>
+		<h1>
+			<p>A Simple Form</p>
+		</h1>
+		<h2>
+			<p>Form Fundamentas</p>
+		</h2>
+		<fieldset>
+			<legend>Customer Info</legend>
+
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name" placeholder="Ej: Jorgito" required autofocus>
+			</br>
+			<label for="telephone">Telephone</label>
+			<input type="text" name="telephone" id="telephone" placeholder="Ej: 1-234-567-9810" pattern="[0-9].{11}" required>
+			</br>
+			<label for="mail">Email</label>
+			<input type="email" name="mail" id="mail" placeholder="Ej: jorgito@simail.com" required>
+		</fieldset>
+		<fieldset>
+			<legend>Books</legend>
+
+			<label for="books">Books</label>
+			<input list="books">
+			<datalist id="books">
+			  <option value="Harry Potter">
+			  <option value="Lord of the Rings">
+			  <option value="Chrome">
+			  <option value="Opera">
+			  <option value="Safari">
+			</datalist>
+
+			<label for="quantity">Quantity (Maximun 5)</label>
+			<input type="number" link="quantity" name="quantity" id="quantity"
+			max="5" min="1">
+			
+		</fieldset>
+		<input type="submit" name="submit" value="Send">
+	</form>
+
+</body>
+</html>
